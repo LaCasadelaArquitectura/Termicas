@@ -12,11 +12,13 @@ export default function Header() {
     setIsClicked(!isClicked);
   };
 
-  const folded = isClicked ? 'transform -translate-y-full z-0 transition-transform duration-1000 ease-in-out ' : 'transition-transform duration-1000 ease-in-out'
+  const folded = isClicked ? 'transform -translate-y-full transition-all duration-1000 ease-in-out ' : ' transition-all duration-1000 ease-in-out'
+  const invisible = isClicked ? ' invisible ' : ' visible'
+
 
   return (
     <>
-      <header className="  grid grid-cols-12 h-16  border-b border-primary-800 z-10 md:flex ">
+      <header className=" z-50 grid grid-cols-12 h-16  border-b border-primary-800  md:flex ">
         <Image
           className="col-start-1 col-span-2 ml-4 pt-2"
           src="/logoColor.png"
@@ -30,7 +32,7 @@ export default function Header() {
         </div>
         <MenuBtn isClicked={isClicked} handleClick={handleClick} />
       </header>
-      <nav className='absolute w-full overflow-hidden md:flex md:flex-col md:items-end md:right-2'>
+      <nav className={`${invisible} absolute z-50 overflow-hidden  w-full  md:flex md:flex-col md:items-end md:right-2 `}>
         <div className={`${folded}`}>
         <Link className="bg-primary-600 flex gap-4 p-4 pl-12 " href="./">
           <svg

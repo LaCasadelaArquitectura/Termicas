@@ -12,7 +12,7 @@ const isClicked = props.isClicked
 
   return (
     
-      <button onClick={props.handleClick} className={`col-start-10 md:ml-auto md:mr-16`}>
+      <button onClick={props.handleClick} className={`z-50 col-start-10 md:ml-auto md:mr-16`}>
         <div className=' mb-2  m-auto flex justify-between items-center h-8 w-20 text-xl font-extrabold  cursor-pointer '>
            
             <div className='flex flex-col justify-between h-6 w-12 ml-12'>

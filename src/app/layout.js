@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Poppins } from 'next/font/google'
-import Header from './ui/header'
-import Footer from './ui/footer'
+import Header from '../../ui/header'
+import Footer from '../../ui/footer'
 
 
 const poppins = Poppins({ 

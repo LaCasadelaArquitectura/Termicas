@@ -14,6 +14,7 @@ export default function Header() {
 
   const folded = isClicked ? 'transform -translate-y-full transition-all duration-1000 ease-in-out ' : ' transition-all duration-1000 ease-in-out'
   const invisible = isClicked ? ' invisible ' : ' visible'
+  const hovered = ''
 
 
   return (
@@ -34,7 +35,7 @@ export default function Header() {
       </header>
       <nav className={`${invisible} absolute z-50 overflow-hidden  w-full  md:flex md:flex-col md:items-end md:right-2 `}>
         <div className={`${folded}`}>
-        <Link className="bg-primary-600 flex gap-4 p-4 pl-12 " href="./">
+        <Link className="bg-primary-600 flex gap-4 p-4 pl-12 hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out" href="./">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -51,7 +52,7 @@ export default function Header() {
           </svg>
           Home
         </Link>
-        <Link className="bg-primary-500 flex gap-4 p-4 pl-12 " href="./canvas">
+        <Link className="bg-primary-500 flex gap-4 p-4 pl-12  hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out " href="./canvas">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -69,7 +70,7 @@ export default function Header() {
           Diapositivas
         </Link>
         <Link
-          className="bg-primary-400 flex gap-4 p-4 pl-12 "
+          className="bg-primary-400 flex gap-4 p-4 pl-12  hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out "
           href="./recursos"
         >
           <svg
@@ -89,7 +90,7 @@ export default function Header() {
           Recursos
         </Link>
         <Link
-          className="bg-primary-300 flex gap-4 p-4 pl-12 "
+          className="bg-primary-300 flex gap-4 p-4 pl-12  hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out"
           href="./proyectX"
         >
           <svg
@@ -108,7 +109,7 @@ export default function Header() {
           </svg>
           ProyectX
         </Link>
-        <Link className="bg-primary-200 flex gap-4 p-4 pl-12 " href="./videos">
+        <Link className="bg-primary-200 flex gap-4 p-4 pl-12  hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out" href="./videos">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -12,30 +12,26 @@ export default function page(props){
   function getData(projectsArray){
     
 
-     projectsArray.map((item) => { 
+     return (projectsArray.map((item) => { 
+      const { id, name, path, description, url } = item;
       if (item.id == props.params.id){ 
-        console.log(item.url)
         return(
-           canvaUrl = item.url
+          <>
+          <h1 className="text-4xl text-center font-bold text-primary-900 p-4 bg-primary-100">{`${name}: ${description} `}</h1>
+          <CanvaSlide url={url} />
+          </>
         )   
       }
     }
     )
-    console.log(canvaUrl)
-}
+   
+)}
     
-    const url=getData(projectsArray)
-
-    console.log(canvaUrl)
+const slides = getData(projectsArray)
 
     return(
-        
-    <>
-        <h1> slide n{canvaUrl}</h1>
-        <CanvaSlide url={canvaUrl} />
-            
-           
-    </>
-
+      <>
+        {slides}
+      </>
     )
 }

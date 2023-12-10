@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Card from "../../../ui/card";
-import { useState } from "react";
+
 import presentaciones from "../../../Data/presentaciones";
 import Link from "next/link";
 
@@ -9,13 +9,10 @@ import Link from "next/link";
 
 export default function Page() {
 
-  const [pf, setPf] = React.useState(0)
+
   const projectsArray = presentaciones.data.presentaciones || [];
 
-  function handleClick() {
-    console.log(Card.id)
-
-  }
+ 
 
   function getData(projectsArray){
    

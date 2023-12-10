@@ -14,7 +14,7 @@ export default function Header() {
 
   const folded = isClicked ? 'transform -translate-y-full transition-all duration-1000 ease-in-out ' : ' transition-all duration-1000 ease-in-out'
   const invisible = isClicked ? ' invisible ' : ' visible'
-  const hovered = ''
+
 
 
   return (
@@ -33,7 +33,7 @@ export default function Header() {
         </div>
         <MenuBtn isClicked={isClicked} handleClick={handleClick} />
       </header>
-      <nav className={`${invisible} absolute z-50 overflow-hidden  w-full  md:flex md:flex-col md:items-end md:right-2 `}>
+      <nav className={`${invisible} absolute z-50 overflow-hidden w-full md:w-72 md:flex md:flex-col  md:right-2 `}>
         <div className={`${folded}`}>
         <Link className="bg-primary-600 flex gap-4 p-4 pl-12 hover:border-primary-950 hover:border-2 transition-all duration-200 ease-in-out" href="./">
           <svg

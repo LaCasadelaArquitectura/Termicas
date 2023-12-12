@@ -17,7 +17,6 @@ export default function page(props){
       if (item.id == props.params.id){ 
         return(
           <>
-          <h1 className="text-4xl text-center font-bold text-primary-900 p-4 bg-primary-100">{`${name}: ${description} `}</h1>
           <CanvaSlide url={url} />
           </>
         )   

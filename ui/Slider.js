@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import SliderContent from "./SliderContent";
 import styles from "../src/app/styles.module.css"
+import Link from "next/link";
 
 export default (props) => {
   const [activeSlide, setActiveSlide] = useState(props.activeSlide);
@@ -60,10 +61,13 @@ export default (props) => {
   return (
     <>
       {/* carousel */}
+      
       <div className={styles.slideC}>
+
         {props.data.map((item, i) => (
           <React.Fragment key={item.id}>
-            <div
+            <Link
+              href={`./${item.id}`}
               className={styles.slide}
               style={{
                 background: item.bgColor,
@@ -72,7 +76,7 @@ export default (props) => {
               }}
             >
               <SliderContent {...item} />
-            </div>
+            </Link>
             <div
               className={styles.reflection}
               style={{
@@ -86,8 +90,8 @@ export default (props) => {
       {/* carousel */}
 
       <div className="pt-24">
-        <button onClick={prev} className="mr-5 h-0 w-0 border-y-[14px] border-y-transparent border-r-[20px] border-r-primary-600"></button>
-        <button onClick={next} className="ml-5 h-0 w-0 border-y-[14px] border-y-transparent border-l-[20px] border-l-primary-600"></button>
+        <button onClick={prev} className="mr-20 h-0 w-0 border-y-[28px] border-y-transparent border-r-[40px] border-r-primary-600"></button>
+        <button onClick={next} className="ml-20 h-0 w-0 border-y-[28px] border-y-transparent border-l-[40px] border-l-primary-600"></button>
       </div>
     </>
   );

@@ -15,6 +15,7 @@
     position: absolute;
     top: 0;
     border-radius: 12px;
+    cursor: pointer;
   }
   
   /* 3D reflection effect */
@@ -42,6 +43,7 @@
     align-items: flex-start;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      
   }
   
   .sliderContent h2 {

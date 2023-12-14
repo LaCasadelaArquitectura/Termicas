@@ -6,45 +6,45 @@ export default [
     title: "Protección Contra Incendios",
     textColor: "bg-gradient-to-r from-red-600 via-red-500 to-yellow-600  text-transparent bg-clip-text",
     recursos:{
-      normativa: {
-        CTE: {
-          nombre: "cte",
-          nombreCompleto: "Codigo Tecnico de la Edificacion",
+      normativa: [
+        {
+          nombre: "CTE",
+          nombreCompleto: "Código Técnico de la Edificación",
           url: "https://www.codigotecnico.org/pdf/Documentos/SI/DBSI.pdf"
         },
-        RIPCI:{
+        {
           nombre: "RIPCI",
-          nombreCompleto: "REGLAMENTO DE INSTALACIONES DE PROTECCIÓN CONTRA INCENDIOS",
+          nombreCompleto: "reglamento de instalaciones de proteccion contra incendios",
           url: "https://www.boe.es/boe/dias/2017/06/12/pdfs/BOE-A-2017-6606.pdf"
         },
-        RSCIEI:{
+        {
           nombre: "RSCIEI",
-          nombreCompleto: "REGLAMENTO DE SEGURIDAD CONTRA INCENDIOSEN LOS ESTABLECIMIENTOS INDUSTRIALES",
+          nombreCompleto: "reglamento de seguridad contra incendios en los espacios industriales",
           url: "https://www.boe.es/buscar/pdf/2004/BOE-A-2004-21216-consolidado.pdf"
         }
-      },
-      presentaciones:{
-        calculo: {
+      ],
+      presentaciones:[
+        {
           nombre: "calculo",
           url: "https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF2yy9CWm8&#x2F;view?embed"
         },
-        general: {
+        {
           nombre: "general",
           url: "https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF2yxfeZ4k&#x2F;view?embed"
         }
-      },
-      guias:{
-        RIPCI:{
+      ],
+      guías:[
+        {
           nombre: "RIPCI",
           nombreCompleto: "REGLAMENTO DE INSTALACIONES DE PROTECCIÓN CONTRA INCENDIOS",
           url: "https://industria.gob.es/Calidad-Industrial/seguridadindustrial/instalacionesindustriales/instalaciones-contra-incendios/informacion513/Gu%C3%ADa%20T%C3%A9cnica%20de%20Aplicaci%C3%B3n/Guia_Tecnica_Aplicacion_RIPCI_Rev_3.pdf"
         },
-        RSCIEI:{
+        {
           nombre: "RSCIEI",
-          nombreCompleto: "REGLAMENTO DE SEGURIDAD CONTRA INCENDIOSEN LOS ESTABLECIMIENTOS INDUSTRIALES",
+          nombreCompleto: "REGLAMENTO DE SEGURIDAD CONTRA INCENDIOS EN LOS ESTABLECIMIENTOS INDUSTRIALES",
           url: "https://industria.gob.es/Calidad-Industrial/seguridadindustrial/instalacionesindustriales/seguridad-incendios/informacionadicional/20190218-v2.pdf"
         }
-      }
+      ]
 
     }
       

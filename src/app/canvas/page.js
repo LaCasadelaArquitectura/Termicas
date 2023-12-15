@@ -19,7 +19,7 @@ export default function Page() {
     return( projectsArray.map((item) => {
       const { id, name, path, description, url } = item;
       return (
-        <Link href={`./canvas/${id}`}>
+        <Link key={id} href={`./canvas/${id}`}>
           <Card
             key={id}
             name={name}

@@ -17,7 +17,7 @@ export default function page(props){
       if (item.id == props.params.id){ 
         return(
           <>
-          <CanvaSlide url={url} />
+          <CanvaSlide key={id} url={url} />
           </>
         )   
       }

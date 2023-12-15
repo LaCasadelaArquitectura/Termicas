@@ -19,6 +19,7 @@ export default function Page() {
     return( projectsArray.map((item) => {
       const { id, name, path, description, url } = item;
       return (
+        <div>
         <Link key={id} href={`./canvas/${id}`}>
           <Card
             key={id}
@@ -27,6 +28,7 @@ export default function Page() {
             description={description}
           />
         </Link>
+        </div>
       )
     })
   )}

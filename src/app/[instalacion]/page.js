@@ -7,7 +7,7 @@ export default function page(props){
      
          if (item.id == props.params.instalacion){ 
            return(
-             <>
+             <React.Fragment key={id}>
              <h1 className={`text-center text-4xl font-bold mt-6 mb-10 ${item.textColor}`}>{item.title}</h1>
              <p className="bg-gradient-to-r from-red-600 via-red-500 to-yellow-600  text-transparent bg-clip-text hidden">sfrsda</p>
              <p className="bg-gradient-to-r from-black via-red-800 to-red-600  text-transparent bg-clip-text hidden">sfrsda</p>
@@ -25,7 +25,7 @@ export default function page(props){
                <RecursosData data={item.recursos.presentaciones} />
              </div>
              </div>
-             </>
+             </React.Fragment>
            )   
          }
        }

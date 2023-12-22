@@ -19,8 +19,8 @@ export default function Page() {
     return( projectsArray.map((item) => {
       const { id, name, path, description, url } = item;
       return (
-        <div>
-        <Link key={id} href={`./canvas/${id}`}>
+        <div  key={id}>
+        <Link href={`./canvas/${id}`}>
           <Card
             key={id}
             name={name}
@@ -39,14 +39,6 @@ export default function Page() {
       <article className="flex  gap-6 flex-wrap justify-evenly m-5">
         {cards}
       </article>
-      <article>
-
-      </article>
-
-
-
-
-
     </>
   )
 };

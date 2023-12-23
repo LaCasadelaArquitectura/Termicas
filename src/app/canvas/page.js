@@ -36,8 +36,10 @@ export default function Page() {
     const cards = getData(projectsArray)
   return (
     <>
-      <article className="flex  gap-6 flex-wrap justify-evenly m-5">
-        {cards}
+      <article className="bg-primary-100 h-screen ">
+        <section className="flex  gap-6 flex-wrap justify-evenly p-5">
+          {cards}
+        </section>
       </article>
     </>
   )

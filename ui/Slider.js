@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import SliderContent from "./SliderContent";
-import styles from "../src/app/styles.module.css"
+import styles from "../src/app/recursos/styles.module.css"
 import Link from "next/link";
 
 export default (props) => {
@@ -67,7 +67,7 @@ export default (props) => {
         {props.data.map((item, i) => (
           <React.Fragment key={item.id}>
             <Link
-              href={`./${item.id}`}
+              href={`./recursos/${item.id}`}
               className={styles.slide}
               style={{
                 background: item.bgColor,

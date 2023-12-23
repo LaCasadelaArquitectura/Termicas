@@ -1,6 +1,6 @@
 import React from "react";
-import instalaciones from "../../../Data/instalaciones"
-import RecursosData from "../../../ui/recursosCard";
+import instalaciones from "../../../../Data/instalaciones"
+import RecursosData from "../../../../ui/recursosCard";
 
 export default function page(props){
   

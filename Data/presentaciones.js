@@ -14,14 +14,14 @@ export default {
                 "name": "PF01",
                 "path": "/aislamiento.png",
                 "description": "Cerramientos",
-                "url": ""
+                "url": "https://www.youtube.com/watch?v=Eh0nY7tIUiw"
             },
             {
                 "id": "3",
                 "name": "PF02",
                 "path": "/aislamiento2.png",
                 "description": "Transmitancias",
-                "url": ""
+                "url": "https://www.youtube.com/watch?v=1CHdRdl9RXU&t=313s"
             },
             {
                 "id": "4",
